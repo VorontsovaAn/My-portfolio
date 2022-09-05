@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#auth-block {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100%;
+}
+
+#auth-form {
+  margin: 30px 15px;
+  font-family: 'Allerta Stencil', sans-serif;
+  width: 600px;
+  background-color: rgba(146,192,32,0.7);
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+#auth-form>form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#auth-form>h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+#auth-form label {
+  font-size: 18px;
+}
+
+#passReminder {
+  color: black;
+}
+
+#auth-form button {
+  width: 150px;
+  font-size: 18px;
+}
+
+#auth-button, #reg-button {
+  text-align: center;
+}
+
+
+
+.navbar-nav>li>a {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 20px;
+  color: #fff
+}
+
+.navbar-toggler {
+  padding: .20rem .50rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid white
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #92c020;
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+  transition: 1s all;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Allerta Stencil', sans-serif;
+  margin-bottom: 4px;
+  font-size: 27px
+}
+
+.navbar-red:hover .wrapper {
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%)
+}
+
+.navbar-brand:hover {
+  color: #fff
+}
+
+.navbar-red {
+  background-color: #a54d97;
+  color: #fff;
+}
+
+.all-show {
+  z-index: 10;
+}
+
+#but1{
+  font-family: 'Microsoft Sans Serif', sans-serif;
+}
+
+footer{
+  min-height: 80px !important;
+  width: 100%;
+  background-color: #a54d97;
+}
+
+.elem{
+  height:350px;
+  margin-bottom:20px;
+  color:white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+  
+#content1{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#content1 .row {
+  width: 100%;
+  margin: 30px 0 20px;
+}
+
+#content1 .h3{
+  width:100%;
+  height:110px;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+#content1 h3{
+  color:white;
+  text-align:center;
+}
+  
+#content1 a{
+  text-decoration:none;
+}
+  
+#content1 h3:hover{
+  border-bottom: 2px solid white;
+  cursor:pointer;
+}
+  
+  
+.var1{
+  background-image: url("../img/spo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+  
+.var3{
+  background-image: url("../img/kindergarten.jpg");
+  background-position: center;
+  background-size: cover;
+}
+  
+.var2{
+  background-image: url("../img/college.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+#buildingsBlock {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#buildingsBlock h2{
+  text-align: center;
+}
+#buildings{
+  width: 100%;
+  margin: 30px auto;
+}
+#buildings .elem{
+  background-color: #92c020;
+  height: 200px;
+}
+#buildings .row {
+  width: 100%;
+
+}
+#buildings .h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0 !important;
+}
+#buildings h3{
+  color:white;
+  text-align:center;
+}
+#buildings a{
+  text-decoration: none;
+}
+#buildings h3:hover{
+  border-bottom: 2px solid white;
+  cursor:pointer;
+}
+  
+
+#add-form {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#add-form h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+  
+  
+table, table td{
+  border: 2px solid black;
+  
+}
+.buttons{
+  text-align: center;
+  margin: 10px;
+}
+
+.call_schedule{
+  display: none;
+}
+#groupsBlock{
+  display: none;
+}
+#groupsBlock .row {
+  width: 100%;
+}
+
+.groups .groupBlock {
+  height: 100px;
+  margin: 10px 0;
+  color:white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: #92c020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#groupsBlock a{
+  text-decoration: none !important;
+}
+
+  
+.groups .groupBlock h3{
+  text-align: center;
+  color: #fff;
+  
+}
+.groups .groupBlock h3:hover{
+  border-bottom: 2px solid white;
+  cursor:pointer;
+}
+  
+  
+  
+
+
+/*медиа-запросы*/
+@media screen and (max-width: 920px) { /*при ширине экрана меньше 920 пикселей*/
+  
+}
+
+@media screen and (max-width: 800px) { /*при ширине экрана меньше 920 пикселей*/
+  
+}
+
+@media screen and (max-width: 650px) { /*при ширине экрана меньше 650 пикселей*/
+  
+}
