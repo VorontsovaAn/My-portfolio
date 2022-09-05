@@ -1,0 +1,1 @@
+const filterApp=document.querySelectorAll(".card");document.querySelector(".filterApp").addEventListener("click",function(t){if("LI"!==t.target.tagName)return!1;let e=t.target.dataset.f;filterApp.forEach(t=>{t.style.display="block",t.classList.contains(e)||"all"===e||(t.style.display="none")})});

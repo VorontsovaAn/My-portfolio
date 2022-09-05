@@ -1,0 +1,1 @@
+$(".show_it").hover(function(){$(".my_btn").fadeIn()},function(){$(".my_btn").fadeOut()}),$(".showBut").on("click",function(){$(".btnLoadShow").slideToggle()});
