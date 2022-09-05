@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Задача№1</title>
+</head>
+<body>
+<script>
+let point = 0;
+let name = prompt("Введите имя: ");
+let start = prompt("Хочешь сыграть в игру "+name+"?");
+if(start == "да" || start == "Да"){
+	let x1 = prompt("Сколько букв в слове 'Сорока'?");
+	if(x1 == "6" || x1 == "шесть" || x1 == "Шесть"){
+		point=point+1;
+	};
+	let x2 = prompt("8-7=");
+	if(x2 == "1" || x2 == "один" || x2 == "Один"){
+		point=point+1;
+	};
+	let x3 = prompt("Было 3 апельсина, Маша взяла 1 апельсин. Сколько апельсинов осталось?");
+	if(x3 == "2" || x3 == "два" || x3 == "Два"){
+		point=point+1;
+	};
+	alert("Ваш счет: "+point);
+}
+else if(start == "нет" || start == "Нет"){
+	alert("Эх, ну ладно(");
+}
+</script>
+</body>
+</html>
